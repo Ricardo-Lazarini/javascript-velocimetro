@@ -1,0 +1,189 @@
+body {
+	background-color: blanchedalmond;
+}
+.painel {
+	width: 1200px;
+	height: 500px;
+	margin-left: 350px;
+	margin-top: 200px;
+	padding: 4px;
+	border: solid 1px slategrey;
+}
+
+
+/* Painel principal desta tela*/
+.painelVelocimetros {
+	width: 1200px;
+	height: 500px;
+	border: solid 1px seagreen;
+	border-radius: 4px;
+	background-image: url('img/fundo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*Painel de seletores*/
+.painelVelocimetros .seletores {
+	width: 10%;
+	height: 500px;
+	float: left;
+}
+button {
+	border: none;
+	background: rgba(0,128,128,.15);
+}
+.painelVelocimetros button img {
+	width: 60%;
+}
+#veloCima {
+	width: 100%;
+	height: 220px;
+	border-bottom: solid 1px slategrey;
+	border-right: solid 1px slategrey;
+}
+#veloSelecionar {
+	width: 100%;
+	height: 60px;
+	font-size: 20px;
+	font-weight: 600;
+	color: slategrey;
+	background-color: rgba(0,128,128,.3);
+}
+#veloSelecionar:hover {
+	color: white;
+	background-color: rgba(0,128,128,.1);
+}
+#veloBaixo {
+	width: 100%;
+	height: 220px;
+	border-top: solid 1px slategrey;
+	border-right: solid 1px slategrey;
+}
+
+
+/*Opcoes de velocimetros*/
+.opcoesVelocimetros {
+	width: 20%;
+	height: 500px;
+	float: left;
+	background: rgba(0,128,128,.3);
+	animation-name: velomenu;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+@keyframes velomenu{
+	0%{width: 1%;}
+	50%{width: 20%;}
+	100%{width: 20%;}
+}
+.opcoesVelocimetros h2, .opcoes {
+	animation-name: veloh2ul;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+@keyframes veloh2ul{
+	0%{opacity: 0;}
+	90%{opacity: 0;}
+	100%{opacity: 9;}
+}
+.opcoesVelocimetros h2 {
+	width: 94%;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 500;
+	color: #A9A9A9;
+	margin-top: 10px;
+	margin-left: 2%;
+	margin-bottom: 30px;
+	border-bottom: solid 1px rgba(0,128,128,.3);
+}
+.opcoesVelocimetros .opcoes .op{
+	width: 90%;
+	margin-left: 8%;
+	margin-top: 2%;
+	padding: 2px;
+	border-bottom: solid 1px rgba(0,128,128,.3);
+}
+.opcoesVelocimetros .opcoes .op small{
+	margin-left: 15px;
+	font-size: 18px;
+	margin-top: 8px;
+	font-weight: 900;
+	color: grey;
+	position: absolute;
+}
+.opcoesVelocimetros img {
+	width: 40px;
+	margin-left: 10px;
+}
+
+
+
+
+/*VeloDisplay*/
+.veloDisplay {
+	width: 69%;
+	height: 490px;
+	border-right: solid 6px tomato;
+	border-radius: 40px;
+	float: left;
+	animation-name: velodisplay;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+@keyframes velodisplay{
+	0%{width: 0%;border: none;}
+	50%{width: 0%;margin-left: 40%;border: none;}
+	100%{width: 69%;border-left: solid 1px tomato;}
+}
+
+.veloDisplay img {
+	width: 400px;
+	margin-top: 50px;
+	margin-left: 300px;
+	display: none;
+	position: absolute;
+	animation-name: velodimg;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+}
+@keyframes velodimg{
+	0%{width: 0%;}
+	98%{width: 0%;}
+	99%{width: 400px;margin-left:300px;margin-top:50px;opacity: 0;}
+	100%{}
+}
+#giro {
+	animation-name: giro;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	position: absolute;
+}
+@keyframes giro{
+	0%{width: 500px;opacity: 0;margin-left:230px;margin-top:-20px;}
+	45%{width: 550px;opacity: 0;margin-left:230px;margin-top:-20px;}
+	58%{width: 550px; opacity: 0.7;margin-left:230px;margin-top:-20px;}
+	69%{width: 400px;margin-left:300px;margin-top:50px;}
+	100%{}
+}
+#ponteiro {
+	width: 60px;
+	position: absolute;
+	margin-top: 80px;
+	margin-left: -363px;
+	transform: rotate(-180deg);
+	display: none;
+	animation-name: ponteiro;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+@keyframes ponteiro {
+	0% {opacity: 0;}
+	49% {transform: rotate(-180deg); opacity: 0;}
+	55% {transform: rotate(-180deg); opacity: 9;}
+	70% {transform: rotate(110deg);}
+	100% {}
+}
+
