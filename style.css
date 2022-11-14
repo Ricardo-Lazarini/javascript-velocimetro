@@ -10,7 +10,6 @@ body {
 	border: solid 1px slategrey;
 }
 
-
 /* Painel principal desta tela*/
 .painelVelocimetros {
 	width: 1200px;
@@ -23,13 +22,13 @@ body {
 	background-size: cover;
 }
 
-
 /*Painel de seletores*/
 .painelVelocimetros .seletores {
 	width: 10%;
 	height: 500px;
 	float: left;
 }
+
 button {
 	border: none;
 	background: rgba(0,128,128,.15);
@@ -37,12 +36,14 @@ button {
 .painelVelocimetros button img {
 	width: 60%;
 }
+
 #veloCima {
 	width: 100%;
 	height: 220px;
 	border-bottom: solid 1px slategrey;
 	border-right: solid 1px slategrey;
 }
+
 #veloSelecionar {
 	width: 100%;
 	height: 60px;
@@ -51,10 +52,12 @@ button {
 	color: slategrey;
 	background-color: rgba(0,128,128,.3);
 }
+
 #veloSelecionar:hover {
 	color: white;
 	background-color: rgba(0,128,128,.1);
 }
+
 #veloBaixo {
 	width: 100%;
 	height: 220px;
@@ -73,6 +76,7 @@ button {
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 }
+
 @keyframes velomenu{
 	0%{width: 1%;}
 	50%{width: 20%;}
@@ -83,11 +87,13 @@ button {
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 }
+
 @keyframes veloh2ul{
 	0%{opacity: 0;}
 	90%{opacity: 0;}
 	100%{opacity: 9;}
 }
+
 .opcoesVelocimetros h2 {
 	width: 94%;
 	text-align: center;
@@ -99,6 +105,7 @@ button {
 	margin-bottom: 30px;
 	border-bottom: solid 1px rgba(0,128,128,.3);
 }
+
 .opcoesVelocimetros .opcoes .op{
 	width: 90%;
 	margin-left: 8%;
@@ -106,6 +113,7 @@ button {
 	padding: 2px;
 	border-bottom: solid 1px rgba(0,128,128,.3);
 }
+
 .opcoesVelocimetros .opcoes .op small{
 	margin-left: 15px;
 	font-size: 18px;
@@ -114,12 +122,11 @@ button {
 	color: grey;
 	position: absolute;
 }
+
 .opcoesVelocimetros img {
 	width: 40px;
 	margin-left: 10px;
 }
-
-
 
 
 /*VeloDisplay*/
@@ -133,6 +140,7 @@ button {
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 }
+
 @keyframes velodisplay{
 	0%{width: 0%;border: none;}
 	50%{width: 0%;margin-left: 40%;border: none;}
@@ -149,18 +157,21 @@ button {
 	animation-duration: 0.5s;
 	animation-iteration-count: 1;
 }
+
 @keyframes velodimg{
 	0%{width: 0%;}
 	98%{width: 0%;}
 	99%{width: 400px;margin-left:300px;margin-top:50px;opacity: 0;}
 	100%{}
 }
+
 #giro {
 	animation-name: giro;
 	animation-duration: 3s;
 	animation-iteration-count: 1;
 	position: absolute;
 }
+
 @keyframes giro{
 	0%{width: 500px;opacity: 0;margin-left:230px;margin-top:-20px;}
 	45%{width: 550px;opacity: 0;margin-left:230px;margin-top:-20px;}
@@ -168,6 +179,7 @@ button {
 	69%{width: 400px;margin-left:300px;margin-top:50px;}
 	100%{}
 }
+
 #ponteiro {
 	width: 60px;
 	position: absolute;
@@ -179,6 +191,7 @@ button {
 	animation-duration: 4s;
 	animation-iteration-count: 1;
 }
+
 @keyframes ponteiro {
 	0% {opacity: 0;}
 	49% {transform: rotate(-180deg); opacity: 0;}
